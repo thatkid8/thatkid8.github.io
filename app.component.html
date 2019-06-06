@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inès Allart Website</title>
+<!-- hello, taking a closer look at my code? have fun! ask me any questions and i can explain my choices-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 61px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-theme-l1" style = "font-size:30px;">Inès Allart: Pedicure-Podologue</a>
+
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <h4 class="w3-bar-item"><b>Navigation</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#L'essential">L'essential</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#Carte">Carte</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#Presentation">Presentation</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#Horaires">Horaires</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#Tarifs">Tarifs</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+  <!-- picturees of Ines and Logo-->
+<img src = "https://res.cloudinary.com/doctolib/image/upload/w_1024,h_700,c_limit/t9nynnddwyc3rv7t9y76.jpg" width = 550/>
+ <img src = "https://res.cloudinary.com/doctolib/image/upload/w_1024,h_700,c_limit/qzonenwkeewsntwln9yh.jpg" width = 400/>
+
+  <div class="w3-row" id = "L'essential">
+    <div class="w3-twothird w3-container">
+      <!--button to schedule appointments-->
+      <br><br>
+      <a href="http://google.com" class = "butter"  title="Prenez votre rendez-vous en ligne">Prenez votre rendez-vous en ligne</a>
+      <br><br>
+      <button style=" left:100px; top:50px; background-color:#68B297; color:white;" onclick="location.href='http://google.com';" title="Prenez votre rendez-vous en ligne" >
+      <strong><font style = "font-family:Verdana; font-size:20px;">
+        Prenez votre rendez-vous en ligne</font></strong>
+<br>
+Renseignez les informations suivantes</button>
+     <br><br> 
+     <h1 style="color:#68B297">L'essential</h1>
+      <pre style = "font-family:Verdana; font-size:20px;"><strong><u>Tarifs et remboursements</u>                    <u>Moyens de paiement</u></strong>
+Conventionné                                         Chèques, espèces et cartes bancaires
+Carte Vitale acceptée
+Tiers payant : Sécurité Sociale
+<a href = "#Tarifs"><font class="w3-text-blue">Voir les tarifs</font></a>
+
+
+<strong><u>Expertises, actes et symptômes</u></strong>
+<ul><li>Pédicurie</li><li>Orthoplastie</li><li>Podologique</li><li>Orthopédiques</li><u id="Carte"></u>
+</ul></pre>
+    </div>
+  </div>
+
+<!-- Carte -->
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 style="color:#68B297">Carte et Informations d'accès</h1>
+      <pre style = "font-family:Verdana; font-size:20px;">4 Avenue Georges Chauvin, 30700 Uzès
+
+<strong><u>Informations pratiques</u></strong>
+1er étage avec ascenseur
+Accès handicapé
+Parking gratuit<br><br></pre>
+    </div>
+  </div>
+<!-- picturees of storefront and map-->
+      <img src = "https://res.cloudinary.com/doctolib/image/upload/w_1024,h_700,c_limit/oymgsq0l9xr0bhhlcxz8.jpg" width = 600/>
+      <img src = "https://maps.googleapis.com/maps/api/staticmap?center=44.0143524,4.41460689999997&channel=desktop&client=gme-doctolib&maptype=roadmap&markers=color:0xFEC400%7C44.0143524,4.41460689999997&scale=1&sensor=false&size=324x500&zoom=15&signature=cJXOd17SSlS6WHt6_i6izWNj2o0=" height = 420 width = 350/>
+
+
+<!-- Présentation du professionnel de santé -->
+  <div class="w3-row w3-padding-64" id = "Presentation">
+    <div class="w3-twothird w3-container">
+      <h1 style="color:#68B297">Présentation du professionnel de santé</h1>
+      <p style = "font-family:Verdana; font-size:20px;">Le pédicure-podologue soigne les pathologies de la peau et des ongles du pied. Il réalise aussi des semelles orthopédiques et s'occupe de la rééducation des pieds et de l'équilibre du patient suite à une opération.
+        <br><br> 
+        <font style="font-size:20px;"><strong><u>Langues parlées</u></strong></font>
+        <br><br>
+        Français
+        <br><br> 
+        <font style="font-size:20px;"><strong><u>Formations</u></strong></font>
+        <br><br>
+        2014: Posturologie - Connaissance et évolution Noisy le Grand <br><br>1993: Pedicure Podologue - Institut de Kinésithérapie Podologie Orthopédie (IKPO), Lille
+        <br><br> 
+        <font style="font-size:20px;"><strong><u>Exercices en cabinet</u></strong></font>
+        <br><br>
+        1993 - 2012: Aire sur la lys
+        <br><br> 
+        <font style="font-size:20px;"><strong><u>Prix et distinctions</u></strong></font>
+        <br><br>
+        2017: Formation de ktape - Ktape<u id = "Horaires"></u>
+      </p>
+    </div>
+  </div>
+
+<!-- Horaires et Contacts -->
+  
+  <div class="w3-row"> 
+    <div class="w3-twothird w3-container">
+      <h1 style = "font-family:Verdana; color:#68B297">Horaires et Contacts</h1>
+      <pre style = "font-family:Verdana; font-size:20px;"><strong><u>Ouverture du secrétariat</u>                                         <u>Contact d'urgence</u></strong>
+Lundi:      08h30 - 12h00, 13h30 - 18h45                   En cas d’urgence, contactez le 15 (Samu)
+Mardi:      08h30 - 12h00, 13h30 - 18h45
+Mercredi:  08h30 - 12h00, 13h30 - 18h45
+Jeudi:       08h30 - 12h00, 13h30 - 18h45
+
+<strong><u id = "Tarifs">Visites à domicile</u></strong>
+Oui</pre>
+    </div>    
+  </div>
+
+<!-- Tarifs -->
+
+    <div class="w3-row w3-padding">
+    <div class=" w3-container">
+      <h1 style = "font-family:Verdana; color:#68B297">Tarifs</h1>
+      <pre style = "font-family:Verdana; font-size:20px;">Soins de pédicurie                                                                33€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Bilan podologique                                                                 35€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Semelles orthopédiques                                                      135€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Orthoplastie                                                               20€ à 40€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Ongle incarné                                                                      33€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Première consultation de podologie                                         0€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Consultation de suivi de podologie                                          0€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Soin de pédicurie à domicile                                        35€ à 42€</pre>
+      <pre style = "font-family:Verdana; font-size:20px;">Soin pédicurie diabetique grade 2 et 3                                   27€</pre>
+      <br>
+      <p>Ces honoraires vous sont communiqués à titre indicatif par le praticien. Ils peuvent varier selon le type de soins finalement réalisés en cabinet, le nombre de consultations et les actes additionnels nécessaires. En cas de dépassement des tarifs, le praticien doit en avertir préalablement le patient.</p>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Inès Allart: Pedicure-Podologue</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Website by Sanjeev Nookala</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
